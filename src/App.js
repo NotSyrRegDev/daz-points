@@ -1,25 +1,91 @@
-import logo from './logo.svg';
+import React , {useState}  from 'react';
 import './App.css';
+import Footer from './components/Footer';
 
-function App() {
+import { AppProvider } from './context/AppContext';
+import {  BrowserRouter,  Route,   Routes, } from "react-router-dom";
+import { Home } from './pages/Home';
+import Loading from './components/Loading';
+import ConfirmPage from './pages/ConfirmPage';
+import InformationPage from './pages/InformationPage';
+import PointsPage from './pages/PointsPage';
+
+
+
+
+const App = () => {
+
+  const [loadingWeb , setLoadingWeb ] = useState(true);
+
+  const [userAssignedId , setUserAssignedId] = useState(0);
+
+  setTimeout(() => {
+    setLoadingWeb(false);
+  } , 1500)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    <AppProvider>
+
+    {loadingWeb ? (
+      <Loading />
+    ) : (
+
+      <div className="iwaiter_container  " >
+   <BrowserRouter>
+
+  
+          <Routes>
+            
+              <Route
+                path="/"
+                element={
+                  <Home />
+                }
+              />
+            
+              <Route
+                path="/confirm"
+                element={
+                  <ConfirmPage />
+                }
+              />
+            
+
+            
+              <Route
+                path="/info"
+                element={
+                  <InformationPage />
+                }
+              />
+            
+              <Route
+                path="/points"
+                element={
+                  <PointsPage />
+                }
+              />
+            
+
+            
+            
+           
+          </Routes>
+       
+                <Footer />
+        </BrowserRouter>
+
+</div>
+
+    )}
+  
+
+  
+
+
+    </AppProvider>
+  )
 }
 
-export default App;
+export default App

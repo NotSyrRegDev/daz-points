@@ -1,0 +1,73 @@
+.main_dz_points {
+    border-radius: 20px;
+    margin-top: 4rem;
+    background: #2b4865;
+    padding: 2rem 3rem;
+}
+
+.inputs_div_form {
+    display: flex;
+}
+.inputs_div_form .flex_1 {
+    flex: 0.7;
+}
+.inputs_div_form .flex_2 {
+    flex: 0.3;
+}
+
+.logo_dz {
+    padding: 5px;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 500px;
+    border: 2px solid #fff;
+}
+
+.headline_main {
+    font-size: 36px;
+    font-weight: 300;
+    font-family: 'Readex Pro' , sans-serif;
+    color: #fff;
+
+}
+
+.subheadline_main {
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'Tajawal' , sans-serif;
+    color: #fff;
+}
+
+.label_main {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Tajawal' , sans-serif;
+    color: #fff;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.input_form {
+ 
+    border: none;
+    outline: none;
+    background: #fff;
+    padding: 0.6rem 0.2rem;
+    border-radius: 15px;
+    color: #010101;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Readex Pro' , sans-serif;
+}
+
+.btn {
+    background: #0088b6;
+    outline: none;
+    border: none;
+    border-radius: 500px;
+    color: #fff;
+    padding: 0.4rem 3.5rem;
+    font-family: 'Readex Pro' , sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+}

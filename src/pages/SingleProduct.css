@@ -1,0 +1,157 @@
+.single_product_page {
+    position: relative;
+    text-align: center;
+    background: #fff;
+    
+    padding-bottom: 1.3rem;
+    box-sizing: 0 12px 32px rgba(0,0,0,0.4);
+    min-width: 75vw;
+    border: 1px solid #a1a0a0a1;
+}
+
+.single_product_page .product_img {
+    max-height: 32rem;
+}
+
+
+
+.flex_one {
+    flex: 0.8;
+}
+
+.flex_two {
+    flex: 0.2;
+}
+.btn_order_package {
+    margin-top: 1.5rem;
+    background: #273840;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Cairo';
+    padding: 0.6rem 2.2rem;
+    border-radius: 15px;
+    width: 60%;
+}
+
+.navigate_back {
+
+    background: #fff;
+    padding: 15px;
+    margin: 0 1.5rem;
+    margin-bottom: 0.8rem;
+    width: 5rem;
+    height: 5rem;
+    text-align: right;
+    border-radius: 250px;
+    
+}
+
+.navigate_back img {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+
+.body_product_card {
+    margin-top: 2.4rem;
+    text-align: left;
+    padding: 0 2rem ;
+}
+
+.flex_choose {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product_choose {
+    font-size: 18px;
+    font-family: 'Cairo' , sans-serif;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+
+.span_darkblue {
+    color: #0a2240;
+    font-weight: 600;
+}
+
+.checkbox_product {
+    margin-left: 0.8rem;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border: 1px solid #7f879a;
+}
+
+.d-flex-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  margin-top: 0.5rem;
+}
+.text-center {
+    text-align: center;
+}
+
+.single_choose_option {
+    margin-top: 2.5rem;
+}
+
+.input_textarea_form {
+    background: #fff;
+    width: 100%;
+    outline: none;
+    border: 1px solid #cfc8c8;
+    padding: 0 1.5rem;
+    color: #010101;
+    min-height: 8rem;
+    text-align: right;
+    font-family: 'Cairo' , sans-serif;
+}
+.flex_center {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+@media (max-width: 580px) {
+    .btn_order_package {
+        font-size: 18px;
+        padding: 0.6rem 1.2rem;
+    }
+    .navigate_back {
+        background: #fff;
+        padding: 9px;
+        margin: 0 0.5rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        text-align: center;
+        border-radius: 250px;
+        
+    }
+    
+    .navigate_back img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+   
+    .product_choose {
+        font-size: 14px;
+
+    }
+    .body_product_card {
+        padding: 0 0.8rem;
+    }
+}
