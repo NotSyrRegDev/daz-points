@@ -1,10 +1,14 @@
 import React from 'react';
+import { Navigate } from 'react-router-dom';
 import './PointsPage.css';
 
 const PointsPage = () => {
+
+  const user = JSON.parse(localStorage.getItem("user"));
+  
   return (
     <div>
-      
+         { !user ? <Navigate to="/" replace /> : ''  }
            
       <div className="main_dz_points">
         

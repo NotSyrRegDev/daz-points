@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth , signInWithPhoneNumber   } from "firebase/auth";
-import {  doc, setDoc  , getFirestore } from "firebase/firestore";
+import { getAuth , signInWithPhoneNumber , RecaptchaVerifier   } from "firebase/auth";
+import {  doc, setDoc  , getFirestore , collection , where , query , getDocs , increment , updateDoc } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -22,4 +22,4 @@ const auth = getAuth();
 const db = getFirestore();
 auth.languageCode = 'it';
 
-export {auth , signInWithPhoneNumber , setDoc , db , doc }
+export {auth , signInWithPhoneNumber , setDoc , db , doc , RecaptchaVerifier , collection , where , query , getDocs , increment , updateDoc }

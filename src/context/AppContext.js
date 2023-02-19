@@ -6,7 +6,8 @@ export const AppContext = createContext();
 export const AppProvider = (props) => {
 
 
-  
+    const [phoneCodeVerify , setPhoneCodeVerify] = useState('');
+    const [phoneNumber , setPhoneNumber] = useState('');
 
 
   
@@ -18,7 +19,9 @@ export const AppProvider = (props) => {
 
 
     return (
-            <AppContext.Provider  >
+            <AppContext.Provider value={{ phoneCode: [ phoneCodeVerify , setPhoneCodeVerify ] ,
+                phoneNumberContext: [phoneNumber , setPhoneNumber]
+             }} >
                 {props.children}
             </AppContext.Provider>
     )

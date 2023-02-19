@@ -6,7 +6,6 @@ import { AppProvider } from './context/AppContext';
 import {  BrowserRouter,  Route,   Routes, } from "react-router-dom";
 import { Home } from './pages/Home';
 import Loading from './components/Loading';
-import ConfirmPage from './pages/ConfirmPage';
 import InformationPage from './pages/InformationPage';
 import PointsPage from './pages/PointsPage';
 
@@ -43,13 +42,7 @@ const App = () => {
                   <Home />
                 }
               />
-            
-              <Route
-                path="/confirm"
-                element={
-                  <ConfirmPage />
-                }
-              />
+          
             
 
             

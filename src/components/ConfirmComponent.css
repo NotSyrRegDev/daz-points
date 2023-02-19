@@ -1,0 +1,88 @@
+
+.form_section_div {
+    text-align: center;
+   }
+   .action_div {
+    width: 100%;
+       margin-top: 1.5rem;
+   }
+   
+   .confirms_page {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 15vh;
+       margin-bottom: 1.2rem;
+   }
+   
+   .react_angle_input {
+       width: 80px;
+       height: 80px;
+       font-size: 22px;
+       color: #010101;
+       
+       background: #fff;
+       border: none;
+       outline: none;
+       margin: 0 0.5rem;
+       border-radius: 20px;
+   
+   }
+   
+   .label_form {
+       display: block;
+       font-size: 23px;
+       color: #0a2240;
+       font-family: 'Cairo' , sans-serif;
+       margin-bottom: 0.8rem;
+   }
+   
+   .input_form {
+       background: #f9f9f9;
+       color: #010101;
+       border: 1px solid #0101019f;
+       height: 2.5rem;
+       width: 70%;
+       font-family: 'Cairo', sans-serif;
+       text-align: right;
+       padding: 0.5rem 1.5rem;
+   }
+   .error_headline {
+       margin-top: 0.8rem;
+       text-align: center;
+       padding: 0.5rem;
+       font-size: 22px;
+       font-weight: lighter;
+       font-family: 'Cairo', sans-serif;
+       color: #af2020;
+       border: 1px solid #af2020;
+   }
+   .input_form::placeholder {
+      
+       text-align: right;
+       font-family: 'Cairo';
+       font-size: 18px;
+   
+   }
+   .popup_success_div {
+       position: fixed;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50% , -50%);
+       background: #fff;
+       box-shadow: 0 12px 22px rgba(0,0,0,0.3);
+       width: 60%;
+       padding: 2rem 0;
+       height: auto;
+       text-align: center;
+   }
+   .popup_success_div img {
+       max-height: 8rem;
+   }
+   
+   
+   @media (max-width: 500px) {
+       .label_form  {
+           font-size: 20px;
+       }
+   }
